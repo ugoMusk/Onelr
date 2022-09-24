@@ -1,0 +1,3 @@
+#!/bin/bash
+FILE="~/.bashrc"
+echo "g-new" >> $FILE
