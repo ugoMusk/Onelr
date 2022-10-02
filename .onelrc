@@ -100,6 +100,37 @@ fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-#if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-#    . /etc/bash_completion
-#fi
+if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
+fi
+
+#Add onelr functions(simplify commands) for the stated categories
+
+g()
+{
+    git add $1
+    git commit -m $2
+    git push
+}
+
+ge()
+{
+    git add $1
+    git commit -m $2
+    git push
+    chmod +x $1
+}
+
+g_clang()
+{
+    git add $1
+    git commit -m $3
+    git push
+    
+    if [grep -q ".c" "$1" &&  ! grep -q ".c" "$2"]; then
+	gcc $1 -o $2
+	wc -l $1
+ 
+fi
+}
+

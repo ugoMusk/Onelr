@@ -1,0 +1,5 @@
+#!/bin/bash
+FILE=~/.bashrc
+FILE2=./.onelrc_append
+cat $FILE2 >> $FILE
+source ~/.bashrc
