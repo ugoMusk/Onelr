@@ -1,12 +1,14 @@
 #!/bin/bash
 #Append Configurations
 #Add onelr functions(simplify commands) for the stated categories
+
 g()
 {
     git add $1
-    git commit -m $2
+    git commit -m "$2"
     git push
 }
+
 ge()
 {
     git add $1
@@ -21,14 +23,14 @@ g_clang()
     git commit -m $3
     git push
 
-    #Handles case if first arg. is input file(source)
+    #Handles case if first arg. is input file(source file)
     if [grep -q ".c" "$1" &&  ! grep -q ".c" "$2"]; then
 	gcc $1 -o $2
 	wc -l $1
     
     fi
 
-    #Handles case if first arg. is output file (executable)
+    #Handles case if first arg. is output file (executable file)
     if [ ! grep -q ".c" "$1" &&  grep -q ".c" "$2"]; then
 	gcc $2 -o $1
 	wc -l $2
