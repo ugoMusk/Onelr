@@ -8,14 +8,16 @@ Clone the repository and run the following commands simultenously dependiing on 
 
 # If You want To Use Onelr's Full Configurations.
 ```
-run:
+run the folowing commands simultenously:
+
 ./onelr
 
 souce ~/.bashrc
 ```
 # If You Just need to append a few lines in your already existing "~/.bashrc" configuration file.
 ```
-run:
+run the folowing commands simultenously:
+
 ./onelr_append
 
 souce ~/.bashrc
