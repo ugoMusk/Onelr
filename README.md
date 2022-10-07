@@ -3,20 +3,24 @@ Onelr is a command line utility, based in the shell scripting Language | First w
 
 |It's another way to avoid running multiple commands to accomplish a single task.
 
-# Usage:
+## Usage:
 Clone the repository and run the following commands simultenously dependiing on your level of need;
 
-# If You want To Use Onelr Full Configurations.
+# If You want To Use Onelr's Full Configurations.
 ```
+run:
 ./onelr
+
 souce ~/.bashrc
 ```
 # If You Just need to append a few lines in your already existing "~/.bashrc" configuration file.
 ```
+run:
 ./onelr_append
+
 souce ~/.bashrc
 ```
-| Command usage | Description                                                                                                                                                                                        |
+| # Command usage | # Description                                                                                                                                                                                        |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | g "filename_here" "commit_message"   | Adds, commits and pushes your specified updates to github. "filename_here"  could be the character "."(a period), to target all changes locally)                                                                                                                             |
 | ge "filename_here" "commit_message" | Adds, commits and pushes your specified updates to github. And makes file  executeable. "filename_here"  must be a file,                                                              |
