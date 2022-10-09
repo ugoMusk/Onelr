@@ -1,5 +1,5 @@
 # Onelr
-Onelr is a command line utility, based in the shell scripting Language | First proposed by [ugoMusk](https://github.com/ugoMusk)
+One Line Run(onelr) is a command line utility, based in the shell scripting Language | First proposed by [ugoMusk](https://github.com/ugoMusk)
 
 It's a simple appraoch to avoid running multiple commands to accomplish a single task like sending updates to github, etcetera, right within the terminal.
 
