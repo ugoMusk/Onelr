@@ -87,6 +87,7 @@ alias c=clear
 alias d=cd
 alias m=mkdir
 alias l=ls
+alias author="echo ugoMusk of Alx wrote this"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -137,7 +138,7 @@ g_clang()
 
     #Handles case if first arg. is output file (executable file)
     if [ ! grep -q ".c" "$1" &&  grep -q ".c" "$2"]; then
-        gcc gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $2 -o $1
+        gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $2 -o $1
         wc -l $2
 
     fi

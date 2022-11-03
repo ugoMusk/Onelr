@@ -2,3 +2,7 @@
 FILE=~/.bashrc
 FILE2=./.onelrc_append
 cat $FILE2 >> $FILE
+
+if [ -f $FILE ]; then
+    . $FILE
+fi

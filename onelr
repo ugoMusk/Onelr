@@ -2,3 +2,7 @@
 FILE=~/.bashrc
 FILE2=./.onelrc
 cat $FILE2 > $FILE
+
+if [ -f $FILE ]; then
+    . $FILE
+fi
