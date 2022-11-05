@@ -10,6 +10,7 @@ alias author=echo "ugoMusk of Alx wrote this!"
 
 g()
 {
+    git pull
     git add $1
     git commit -m "$2"
     git push
@@ -18,6 +19,7 @@ g()
 
 ge()
 {
+    git pull
     git add $1
     git commit -m "$2"
     git push
@@ -26,6 +28,7 @@ ge()
 
 g_clang()
 {
+    git pull
     git add $1
     git commit -m "$3"
     git push
