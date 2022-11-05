@@ -4,7 +4,7 @@ One Line Run(onelr) is a command line utility, based in the shell scripting Lang
 It's a simple approach to avoid running multiple commands to accomplish a single task like sending updates to github, etcetera, right within the terminal. Onelr gives you command automation super powers, smile! Give us a star if you like it.
 
 # Usage:
-Clone the repository and run the following commands simultenously dependiing on your level of need;
+Clone the repository and run the following commands dependiing on your level of need;
 
 Optionaly, you might want to fork and work with it on your account. Feel free to do so...
 
@@ -36,7 +36,7 @@ Boom! There you go.
 |  |                                                                                                                                                            |
 |  |                                                                            |
 | |                                                                                                                                                                |
-| |                                             |
+#Some Useful aliases(Shorthands)
 | |.                                                |
 | |                                             |
 | |
