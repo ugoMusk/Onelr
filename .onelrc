@@ -145,3 +145,4 @@ g_clang()
         wc -l $2
 
     fi
+}
