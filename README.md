@@ -15,6 +15,9 @@ Optionaly, you might want to fork and work with it on your account. Feel free to
 run the folowing command:
 
 ./onelr
+exit
+
+and then  restart your terminal.
 
 Boom! you are set to explore.
 
@@ -24,6 +27,9 @@ Boom! you are set to explore.
 run the folowing command:
 
 ./onelr_append
+exit
+
+and then  restart your terminal.
 
 Boom! There you go.
 ```
