@@ -116,7 +116,7 @@ g()
 
 }
 
-ge()
+gexec()
 {
     git pull
     git add $1
@@ -125,7 +125,7 @@ ge()
     chmod +x $1
 }
 
-g_clang()
+gcompile()
 {
     git pull
     git add $1
@@ -145,4 +145,20 @@ g_clang()
         wc -l $2
 
     fi
+}
+
+# Collect git credentials
+gconfig()
+{
+    export OMAIL=$1
+    export ONAME=$2
+    export PAT=$3
+}
+#Setting up git repository locally
+gclone()
+{
+    git clone "$1"
+    git init
+    git config --global user.email "$OMAIL"
+    git config --global user.name "$ONAME"
 }
