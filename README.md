@@ -54,8 +54,8 @@ Boom! There you go.
 | gexec "filename_here" "commit_message"        | Adds, commits and pushes your specified updates to github. And makes file  executeable. "filename_here"  must be a file,                                                              |
 | gcompile "filename_here" "filename2_here" "commit_message"        | Adds, commits and pushes your specified updates to github.And compiles file with all standard gnu flags  "filename_here" must be a file with a .c extension (C source file), and "filename2_here" any name you would want to save your compiled result in or vice versa. will default to "a.out" in case not specified.
 |gconfig "your_git_email" "your_git_username "your_PAT_ending_with_an_@"        |Collects and stores your git credentials in your environment. The order in the command must be strictly followed
-| 	 		  		     | gclone "https://"$PAT"github.com/"$ONAME"/repository_name.git"
-|Clones your repository, sets your PAT automatically,  initializes git and configures your username and email with git. the url must be identical with the example url, except that your  repository name must be the name of the  actual repository you want to clone.
+|gclone "https://"$PAT"github.com/"$ONAME"/repository_name.git"	 		  		     |Clones your repository, sets your PAT automatically,  initializes git and configures your username and email with git. the url must be identical with the example url, except that your  repository name must be thename of the  actual repository you want to clone.
+|
 |                                                                                                                                                            |
 |  |                                                                            |
 | |                                                                                                                                                                |
