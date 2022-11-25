@@ -11,7 +11,7 @@ Optionaly, you might want to fork and work with it on your account. Feel free to
 ## Configuration:
 
 ### If You want To Use Onelr's Full Configurations.
-run the folowing command:
+run the folowing commands:
 ```
 ./onelr
 
@@ -25,7 +25,7 @@ and then  restart your terminal.
 Boom! you are set to explore.
 
 ### If You Just need to append a few lines in your already existing configuration file.
-run the folowing command:
+run the folowing commands:
 ```
 ./onelr_append
 
@@ -41,8 +41,9 @@ Boom! There you go.
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | g "filename_here" "commit_message"         | Adds, commits and pushes your specified updates to github. "filename_here"  could be the character "."(a period), to target all changes locally)                                                                                                                             |
 | gexec "filename_here" "commit_message"        | Adds, commits and pushes your specified updates to github. And makes file  executeable. "filename_here"  must be a file,                                                              |
-| gcompile "filename_here" "filename2_here" "commit_message"        | Adds, commits and pushes your specified updates to github.And compiles file with all standard gnu flags  "filename_here" must be a file with a .c extension (C source file), and "filename2_here" any name you would want to save your compiled result in or vice versa. will default to "a.out" in case not specified.                                                           |
-|        |                                                                                                                                                              |
+| gcompile "filename_here" "filename2_here" "commit_message"        | Adds, commits and pushes your specified updates to github.And compiles file with all standard gnu flags  "filename_here" must be a file with a .c extension (C source file), and "filename2_here" any name you would want to save your compiled result in or vice versa. will default to "a.out" in case not specified.|
+
+|gconfig "your_git_email" "your_git_username "your_PAT_end_with_an_@"        |Collects and stores your git credentials in yourenvironment. The order in thr command must be strictly followed                                                                                                                                                              |
 |  |                                                                                                                                                            |
 |  |                                                                            |
 | |                                                                                                                                                                |
