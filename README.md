@@ -38,21 +38,22 @@ and then  restart your terminal.
 
 Boom! There you go.
 
-#New!
+
+# New!
 
 *Onelr enables you to automate the process of cloning your repositories and never needing to type your PAT every single time. See usage chart below for command description*
 
 ![Screenshot_20221125-160330](https://user-images.githubusercontent.com/34632702/204017799-78d98a00-f59e-4f0a-8341-51ffdff67014.png)
 
 
-#Usage Chart:
+# Usage Chart:
 
 | ## Command usage | ## Description                                                                                                                                                                                        |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | g "filename_here" "commit_message"         | Adds, commits and pushes your specified updates to github. "filename_here"  could be the character "."(a period), to target all changes locally)                                                                                                                             |
 | gexec "filename_here" "commit_message"        | Adds, commits and pushes your specified updates to github. And makes file  executeable. "filename_here"  must be a file,                                                              |
 | gcompile "filename_here" "filename2_here" "commit_message"        | Adds, commits and pushes your specified updates to github.And compiles file with all standard gnu flags  "filename_here" must be a file with a .c extension (C source file), and "filename2_here" any name you would want to save your compiled result in or vice versa. will default to "a.out" in case not specified.
-|gconfig "your_git_email" "your_git_username "your_PAT_ending_with_an_@"        |Collects and stores your git credentials in your environment. The order in the command must be strictly followed                                                                                                                                                              |
+|gconfig "your_git_email" "your_git_username "your_PAT_ending_with_an_@"        |Collects and stores your git credentials in your environment. The order in the command must be strictly followed                                                           |gclone "https://"$PAT"github.com/"$ONAME"/repository_name.git"                                                              | Clones your repository, sets your PAT automatically,  initializes git and configures your username and email with git. the url must be identical with the example url, except that your  repository name must be the name of the  actual repository you want to clone.
 |  |                                                                                                                                                            |
 |  |                                                                            |
 | |                                                                                                                                                                |
