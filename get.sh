@@ -12,9 +12,9 @@ echo omail="$1" >> ~/.bashrc
 echo oname="$2" >> ~/.bashrc
 
 echo 'export OMAIL=$omail' >> ~/.bashrc
-echo 'exprt ONAME=$oname' >> ~/.bashrc
+echo 'export ONAME=$oname' >> ~/.bashrc
 echo 'export PAT=$pat' >> ~/.bashrc
-sed -i 's/gconfig//g' ~/.bashrc
+sed -i 's/gconfig/blank/g' ~/.bashrc
 }
 
 #Setting up git repository locally
