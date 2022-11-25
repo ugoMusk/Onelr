@@ -1,6 +1,8 @@
 #!/bin/bash
-FILE=~/.bashrc
-FILE2=./.onelrc
-cat $FILE2 > $FILE
+F1=~/.bashrc
+F2=./.onelrc
+cat $F2 > $F1
+F3=./get.sh
+cat $F3 >> $F1
 chmod +x sauce
 ./sauce

@@ -11,28 +11,32 @@ Optionaly, you might want to fork and work with it on your account. Feel free to
 ## Configuration:
 
 ### If You want To Use Onelr's Full Configurations.
-```
 run the folowing command:
-
+```
 ./onelr
+
+```
+```
 exit
 
+```
 and then  restart your terminal.
 
 Boom! you are set to explore.
 
-```
 ### If You Just need to append a few lines in your already existing configuration file.
-```
 run the folowing command:
-
+```
 ./onelr_append
+
+```
+```
 exit
 
+```
 and then  restart your terminal.
 
 Boom! There you go.
-```
 | # Command usage | # Description                                                                                                                                                                                        |
 | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | g "filename_here" "commit_message"         | Adds, commits and pushes your specified updates to github. "filename_here"  could be the character "."(a period), to target all changes locally)                                                                                                                             |
