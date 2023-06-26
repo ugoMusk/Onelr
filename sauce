@@ -1,2 +1,2 @@
 #!/bin/bash
-. ~/.bashrc
+. ~/.bashrc && exit && exit && exit

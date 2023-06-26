@@ -116,6 +116,14 @@ g()
 
 }
 
+gcolab()
+{
+    git pull
+    git add $1
+    git commit -m "$2"
+    git config pull.rebase false
+    git push
+}
 gexec()
 {
     git pull

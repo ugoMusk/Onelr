@@ -4,5 +4,5 @@ F2=./.onelrc
 cat $F2 > $F1
 F3=./get.sh
 cat $F3 >> $F1
-chmod +x sauce
-./sauce
+F4=./sauce
+chmod +x $F4 && ./$F4
