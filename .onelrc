@@ -116,7 +116,7 @@ g()
 
 }
 
-gcolab()
+gmcollab()
 {
     git pull
     git add $1

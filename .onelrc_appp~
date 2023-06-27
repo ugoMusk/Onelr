@@ -1,0 +1,57 @@
+#Set aliases
+alias l=ls
+alias e=emacs
+alias d=cd
+alias c=clear
+alias author=echo "ugoMusk of Alx wrote this!"
+
+#Append Configurations
+#Add onelr functions(simplify commands) for the stated categories
+
+g()
+{
+    git pull
+    git add $1
+    git commit -m "$2"
+    git push
+    
+}
+
+gcolab()                                          {
+    git pull
+    git add $1
+    git commit -m "$2"
+    git config pull.rebase false
+    git push
+}
+
+gexec()
+{
+    git pull
+    git add $1
+    git commit -m "$2"
+    git push
+    chmod +x $1
+}
+
+gcompile()
+{
+    git pull
+    git add $1
+    git commit -m "$3"
+    git push
+
+    #Handles case if first arg. is input file(source file)
+    if [grep -q ".c" "$1" &&  ! grep -q ".c" "$2"]; then
+	gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $1 -o $2
+	wc -l $1
+    
+    fi
+
+    #Handles case if first arg. is output file (executable file)
+    if [ ! grep -q ".c" "$1" &&  grep -q ".c" "$2"]; then
+	gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $2 -o $1
+	wc -l $2
+    
+    fi
+}
