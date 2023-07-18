@@ -180,18 +180,6 @@ gclone()
     git config --global user.email "$OMAIL"
     git config --global user.name "$ONAME"
 }
-pat=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@
-omail=ugobothankgod@gmail.com
-oname=ugoMusk
-export OMAIL=$omail
-export ONAME=$oname
-export PAT=$pat
-pat=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@
-omail=ugobothankgod@gmail.com
-oname=ugoMusk
-export OMAIL=$omail
-export ONAME=$oname
-export PAT=$pat
 #Set aliases
 alias l=ls
 alias e=emacs
