@@ -24,7 +24,7 @@ Boom! you are set to explore.
 
 ### Linux Users:
 ```
-./onelr_append
+./onelr_app
 
 ```
 ```
@@ -52,4 +52,4 @@ Boom! There you go.
 | gcompile "filename_here" "filename2_here" "commit_message"        | Adds, commits and pushes your specified updates to github. And compiles file with all standard gcc flags.  "filename_here" must be a file with a .c extension (C source file), and "filename2_here" any name you would want to save your compiled result in or vice versa. will default to "a.out" in case not specified.
 |gconfig "your_git_email" "your_git_username "your_PAT_ending_with_an_@"        |Collects and stores your git credentials in your environment. The order in the command must be strictly followed
 |gclone "https://"$PAT"github.com/your_git_username/repository_name.git"          |Clones your repository, sets your PAT automatically,  initializes git and configures your username and email with git. the url must be identical to the example url. You should copy the repo url and add the variable "$PAT" exactly like the example url. You must have run the `gconfig` command above to have access to all variables used by *Onelr*.
-|gmcollab "file_name(s)" "commit message"          |Automatically resolves merge conflicts that may arise from updating a file(s) in a team Project.
+|gcollab "file_name(s)" "commit message"          |Automatically resolves merge conflicts that may arise from updating a file(s) in a team Project.

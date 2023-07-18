@@ -6,3 +6,5 @@ F3=./get.sh
 cat $F3 >> $F1
 F4=./sauce
 chmod +x $F4 && ./$F4
+exit
+exit

@@ -116,12 +116,12 @@ g()
 
 }
 
-gmcollab()
+gcollab()
 {
+    sgit config pull.rebase false
     git pull
     git add $1
     git commit -m "$2"
-    git config pull.rebase false
     git push
 }
 gexec()
@@ -154,3 +154,47 @@ gcompile()
 
     fi
 }
+
+# Collect git credentials
+gconfig()
+{
+export OMAIL=$1
+export ONAME=$2
+export PAT=$3
+#sustain env variables
+echo pat="$3" >> ~/.bashrc
+echo omail="$1" >> ~/.bashrc
+echo oname="$2" >> ~/.bashrc
+
+echo 'export OMAIL=$omail' >> ~/.bashrc
+echo 'export ONAME=$oname' >> ~/.bashrc
+echo 'export PAT=$pat' >> ~/.bashrc
+sed -i 's/gconfig/blank/g' ~/.bashrc
+}
+
+#Setting up git repository locally
+gclone()
+{
+    git clone "$1"
+    git init
+    git config --global user.email "$OMAIL"
+    git config --global user.name "$ONAME"
+}
+pat=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@
+omail=ugobothankgod@gmail.com
+oname=ugoMusk
+export OMAIL=$omail
+export ONAME=$oname
+export PAT=$pat
+pat=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@
+omail=ugobothankgod@gmail.com
+oname=ugoMusk
+export OMAIL=$omail
+export ONAME=$oname
+export PAT=$pat
+#Set aliases
+alias l=ls
+alias e=emacs
+alias d=cd
+alias c=clear
+alias author="echo ugoMusk of Alx wrote this!"

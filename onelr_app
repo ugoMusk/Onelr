@@ -7,3 +7,5 @@ cat $F3 >> $F1
 rm $F2
 chmod +x sauce
 ./sauce
+exit
+exit
