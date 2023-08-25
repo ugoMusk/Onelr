@@ -6,6 +6,7 @@ gconfig()
 export OMAIL=$1
 export ONAME=$2
 export PAT=$3
+
 #sustain env variables
 echo pat="$3" >> ~/.bashrc
 echo omail="$1" >> ~/.bashrc

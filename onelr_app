@@ -1,11 +1,14 @@
 #!/bin/bash
 F1=~/.bashrc
-F2=./.onelrc_apps
+F2=./.onelrc_app
+F6=./.onelrc
+F5=./.aliases
+F4=~/.bash_aliases
 cat $F2 >> $F1
 F3=./get.sh
 cat $F3 >> $F1
 rm $F2
-chmod +x sauce
-./sauce
-exit
+rm $F6
+cat $F5 > $F4
+echo `${exit}`
 exit
