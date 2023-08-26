@@ -7,8 +7,8 @@ F4=~/.bash_aliases
 cat $F2 >> $F1
 F3=./get.sh
 cat $F3 >> $F1
-rm $F2
-rm $F6
 cat $F5 > $F4
+cd ..
+rm -rf Onelr
 echo `${exit}`
 exit

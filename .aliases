@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+#Set aliases
+alias l=ls
+alias e=emacs
+alias d=cd
+alias c=clear
+alias author="echo ugoMusk of Alx wrote this!"
