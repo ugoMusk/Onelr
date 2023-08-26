@@ -10,5 +10,5 @@ cat $F3 >> $F1
 cat $F5 > $F4
 cd ..
 rm -rf Onelr
-echo `${exit}`
-exit
+kill -9 $PPID && exit
+
