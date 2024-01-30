@@ -53,3 +53,13 @@ Boom! There you go.
 |gconfig "your_git_email" "your_git_username "your_PAT_ending_with_an_@"        |Collects and stores your git credentials in your environment. The order in the command must be strictly followed
 |gclone "https://"$PAT"github.com/your_git_username/repository_name.git"          |Clones your repository, sets your PAT automatically,  initializes git and configures your username and email with git. the url must be identical to the example url. You should copy the repo url and add the variable "$PAT" exactly like the example url. You must have run the `gconfig` command above to have access to all variables used by *Onelr*.
 |gcollab "file_name(s)" "commit message"          |Automatically resolves merge conflicts that may arise from updating a file(s) in a team Project.
+
+## Search History
+This section describes the capability Onelr offers, to help you search through and filter your history. If you have ever been in a situation were you need to run a previous command that has credentials you don't have off hand. if you can remember a single term in the command, then you can get printed to your screen!
+
+#### Usage:
+```
+search_history
+```
+After copying and running the above command, you would be prompted in the next line to enter a query term. Enter a search term that would be used to filter through the file containing your cmd history and press enter.
+

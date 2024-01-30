@@ -73,6 +73,26 @@ gclone()
     git config --global user.email "$OMAIL"
     git config --global user.name "$ONAME"
 }
+
+search_history()
+{
+    read -p "search query: " query
+    if [[ -z $query ]]
+    then
+        echo "You did not enter any query string!"
+    else
+        results=$(history | grep -E $query)
+        if [[ -z $results ]]
+        then
+            echo "Unknown term: $query"
+            echo "Does not contain any useful output, no history for given query!"
+        else
+            history | grep -E "$query"
+            echo "Search made easy by Onelr!"
+        fi
+    fi
+}
+
 #Set aliases
 alias l=ls
 alias e=emacs
