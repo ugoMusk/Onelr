@@ -82,12 +82,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias e=emacs
-alias c=clear
-alias d=cd
-alias m=mkdir
-alias l=ls
-alias author="echo ugoMusk of Alx wrote this"
+
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -118,8 +113,7 @@ g()
 
 gcollab()
 {
-    sgit config pull.rebase false
-    git pull
+    sgit config pull.rebase false                     git pull
     git add $1
     git commit -m "$2"
     git push
@@ -180,6 +174,26 @@ gclone()
     git config --global user.email "$OMAIL"
     git config --global user.name "$ONAME"
 }
+
+search_history()
+{
+    read -p "search query: " query
+    if [[ -z $query ]]
+    then
+        echo "You did not enter any query string!"
+    else
+        results=$(history | grep -E $query)
+        if [[ -z $results ]]
+        then
+            echo "Unknown term: $query"
+            echo "Does not contain any useful output, no history for given query!"
+        else
+            history | grep -E "$query"
+            echo "Search made easy by Onelr!"
+        fi
+    fi
+}
+
 #Set aliases
 alias l=ls
 alias e=emacs
