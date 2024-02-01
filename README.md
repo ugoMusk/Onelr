@@ -61,5 +61,5 @@ This section describes the capability Onelr offers, to help you search through a
 ```
 search_history
 ```
-After copying and running the above command, you would be prompted in the next line to enter a query term. Enter a search term that would be used to filter through the file containing your cmd history and press enter.
+After copying and running the above command, you would be prompted in the next line to enter a query term. Enter a search term that would be used to filter through the file containing your cmd history and press enter. enjoy!
 
